@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            position: relative;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-left: 5px;
+        }
+
+        #editFormContainer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4 mb-4">Expense Tracker</h2>
+        <label for="expense">Choose Expense</label><input id="expense" type="number" class="form-control"/>
+        <label for="description">Choose Description</label><input id="description" type="text" class="form-control"/>
+        <label for="category">Choose a Category</label><input id="category" type="search" class="form-control"/>
+        <button id="addExpense" type="button" class="btn btn-primary">Add Expense</button>
+        <ul id="expenseList" class="mt-4"></ul>
+
+        <!-- Edit form container -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <div id="editFormContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
